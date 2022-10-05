@@ -63,7 +63,7 @@ body {
   background: #fff;
   color: #000;
   opacity: 0.85;
-  height: 50px;
+  height: 70px;
   z-index: 12;
 }
 
@@ -72,6 +72,7 @@ body {
   justify-content: space-between;
   height: 64px;
   align-items: center;
+  margin-top: 5px;
 }
 
 .menu-items {
@@ -82,8 +83,7 @@ body {
 .menu-items li {
   list-style: none;
   margin-left: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .menu-items a {
