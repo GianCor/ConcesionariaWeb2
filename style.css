@@ -14,7 +14,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 /* ///////////..utility classes../////////// */
@@ -112,9 +112,6 @@ body {
       rgba(240, 240, 240, 0.144),
       rgba(255, 255, 255, 0.336)
     );
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .showcase-container {
@@ -126,6 +123,7 @@ body {
   height: 30vh;
   font-size: 1.6rem;
   cursor: grab;
+  width: 100wh;
 }
 
 .second-page{
@@ -211,11 +209,11 @@ body {
 
 /* ..........////Food category///........... */
 
-#food {
+#motos {
   padding: 5rem 0 10rem 0;
 }
 
-#food h2 {
+#motos h2 {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 400;
@@ -224,12 +222,12 @@ body {
   color: #555;
 }
 
-.food-container {
+.motos-container {
   display: flex;
   justify-content: space-between;
 }
 
-.food-container img {
+.motos-container img {
   display: block;
   width: 100%;
   margin: auto;
@@ -469,8 +467,10 @@ body {
     opacity: 0.95;
   }
 
-  .showcase-area{
-    height: 40vh;
+
+  .showcase-container{
+    height: 70vh;
+    
   }
 
   .swiper-pagination{
@@ -579,16 +579,16 @@ body {
 
   /* ......./ food /......... */
 
-  .food-container {
+  .motos-container {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .food-type:not(:last-child) {
+  .moto-type:not(:last-child) {
     margin-bottom: 3rem;
   }
 
-  .food-type {
+  .moto-type {
     box-shadow: 5px 5px 10px 0 #aaa;
   }
 
@@ -598,6 +598,7 @@ body {
 }
 
 @media (max-width: 500px) {
+
   html {
     font-size: 65%;
   }

@@ -27,7 +27,7 @@
           <ul class="menu-items">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#food">Category</a></li>
+              <li><a href="#motos">Category</a></li>
               <li><a href="#food-menu">Menu</a></li>
               <li><a href="#testimonials">Testimonial</a></li>
               <li><a href="#contact">Contact</a></li>
@@ -76,47 +76,47 @@
         </div>
       </div>
     </section>
-    <section id="food">
-      <h2>Types of food</h2>
-      <div class="food-container container">
-        <div class="food-type fruite">
+    <section id="motos">
+      <h2>Tenemos lo que necesitas</h2>
+      <div class="motos-container container">
+        <div class="moto-type eco">
           <div class="img-container">
-            <img src="https://i.postimg.cc/yxThVPXk/food1.jpg" alt="error" />
+            <img src="Assets/Moto1.png" alt="error" />
             <div class="img-content">
-              <h3>fruite</h3>
+              <h3>Eco</h3>
               <a
                 href="https://en.wikipedia.org/wiki/Fruit"
                 class="btn btn-primary"
                 target="blank"
-                >learn more</a
+                >Ver mas</a
               >
             </div>
           </div>
         </div>
-        <div class="food-type vegetable">
+        <div class="moto-type gama-media">
           <div class="img-container">
-            <img src="https://i.postimg.cc/Nffm6Rkk/food2.jpg" alt="error" />
+            <img src="Assets/Moto2.png" alt="error" />
             <div class="img-content">
-              <h3>vegetable</h3>
+              <h3>Gama media</h3>
               <a
                 href="https://en.wikipedia.org/wiki/Vegetable"
                 class="btn btn-primary"
                 target="blank"
-                >learn more</a
+                >Ver mas</a
               >
             </div>
           </div>
         </div>
-        <div class="food-type grin">
+        <div class="moto-type deportiva">
           <div class="img-container">
-            <img src="https://i.postimg.cc/76ZwsPsd/food3.jpg" alt="error" />
+            <img src="Assets/Moto3.png" alt="error" />
             <div class="img-content">
-              <h3>grin</h3>
+              <h3>Deportivas</h3>
               <a
                 href="https://en.wikipedia.org/wiki/Grain"
                 class="btn btn-primary"
                 target="blank"
-                >learn more</a
+                >Ver mas</a
               >
             </div>
           </div>
@@ -285,7 +285,7 @@
         </div>
 
         <div class="form-container">
-          <h2>Contact Us</h2>
+          <h2>Contactanos</h2>
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="E-Mail" />
           <textarea
@@ -293,12 +293,12 @@
             rows="6"
             placeholder="Type Your Message"
           ></textarea>
-          <a href="#" class="btn btn-primary">Submit</a>
+          <a href="#" class="btn btn-primary">Enviar</a>
         </div>
       </div>
     </section>
     <footer id="footer">
-      <h2>Restraunt &copy; all rights reserved</h2>
+      <h2>CrecerM.F. Todos los derechos reservados.</h2>
     </footer>
   </body>
   <!-- 
@@ -336,7 +336,7 @@
     const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    loop:true,
+    loop:false,
     effect: "cube",
     cubeEffect:{
       shadow: false,
@@ -357,11 +357,6 @@
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
     },
   });
   </script>
