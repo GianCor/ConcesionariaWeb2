@@ -16,7 +16,13 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link 
+      rel="stylesheet" 
+      href="style.css" 
+    />
+    <link 
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet">
   </head>
   <body>
 
@@ -29,7 +35,7 @@
           <span class="line line3"></span>
         </div>
         <ul class="menu-items">
-          <li><a href="#home">Inicio</a></li>
+          <li><a href="#showcase">Inicio</a></li>
           <li><a href="#about">Sobre nosotros</a></li>
           <li><a href="#motos">Catalogo</a></li>
           <li><a href="#mapa">¿Donde estamos?</a></li>
@@ -75,11 +81,12 @@
           </p>
         </div>
         <div class="about-img">
-          <img src="Assets/Motociclista.png" alt="food" />
+          <img src="Assets/Motociclista.png" alt="Motociclista" />
         </div>
       </div>
     </section>
     <section id="motos">
+      <div data-aos="fade-right" class="motos-wrapper"></div>
       <h2>Tenemos lo que necesitas</h2>
 
       <div class="motos-container container">
@@ -119,71 +126,29 @@
         </div>
       </div>
     </section>
-    <section id="testimonials">
-      <h2 class="testimonial-title">What Our Customers Say</h2>
-      <div class="testimonial-container container">
-        <div class="testimonial-box">
-          <div class="customer-detail">
-            <div class="customer-photo">
-              <img src="Assets/lgante.jfif" alt="" />
-              <p class="customer-name">L-gante</p>
-            </div>
+    <section id="mapa">
+      <div class="mapa-container">
+          <div class="mapa-info-container"><ul class="mapa-info">
+            <li><strong>Agencia</strong>: Paraná</li>
+            <li><strong>Dirección</strong>: Ramirez y...</li>
+            <li><strong>Teléfono</strong>: +543438903489</li>
+            <li><strong>E-mail</strong>: Concesionaria@empresa.com</li>
+            <li><strong>Horarios</strong>: Lunes a Viernes de 8:00 a 13:00 y de 16:00 a 21:00</li>
+          </ul>
           </div>
-          <div class="star-rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div>
-          <p class="testimonial-text">
-            Banco una locura esta consecionaria, mira hablo en latin
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
-            
-          </p>
-        </div>
-        <div class="testimonial-box">
-          <div class="customer-detail">
-            <div class="customer-photo">
-              <img
-                src="https://i.postimg.cc/sxd2xCD2/female-photo1.jpg"
-                alt=""
-              />
-              <p class="customer-name">Amelia Watson</p>
-            </div>
-          </div>
-          <div class="star-rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div>
-          <p class="testimonial-text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
-            voluptas cupiditate aspernatur odit doloribus non.
-          </p>
-        </div>
-        <div class="testimonial-box">
-          <div class="customer-detail">
-            <div class="customer-photo">
-              <img src="https://i.postimg.cc/fy90qvkV/male-photo3.jpg" alt="" />
-              <p class="customer-name">Ben Roy</p>
-            </div>
-          </div>
-          <div class="star-rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div>
-          <p class="testimonial-text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
-            voluptas cupiditate aspernatur odit doloribus non.
-          </p>
-        </div>
+          <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=900&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-google-maps.com/">Embed Google Map</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
       </div>
+      <div class="mapa-container">
+        <div class="mapa-info-container"><ul class="mapa-info">
+          <li><strong>Agencia</strong>: Paraná</li>
+          <li><strong>Dirección</strong>: Ramirez y...</li>
+          <li><strong>Teléfono</strong>: +543438903489</li>
+          <li><strong>E-mail</strong>: Concesionaria@empresa.com</li>
+          <li><strong>Horarios</strong>: Lunes a Viernes de 8:00 a 13:00 y de 16:00 a 21:00</li>
+        </ul>
+        </div>
+        <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=900&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-google-maps.com/">Embed Google Map</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+    </div>
     </section>
     <section id="contact">
       <div class="contact-container container">
@@ -265,5 +230,7 @@
         prevEl: ".swiper-button-prev",
       },
     });
+    AOS.init();
   </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </html>
