@@ -45,6 +45,12 @@
       </div>
     </nav>
 
+    <div class="sidebar">
+      <a href="#"><img src="Assets/facebook.png"></a>
+      <a href="#"><img src="Assets/instagram.png"></a>
+      <a href="#"><img src="Assets/whatsapp.png"></a>
+    </div>
+
     <section class="showcase-area" id="showcase">
       <div class="swiper">
         <div class="swiper-wrapper">
@@ -72,9 +78,9 @@
     <section id="about">
       <div class="about-wrapper container">
         <div class="about-text">
-          <p class="small">Sobre nosotros</p>
-          <h2>Queremos verte crecer</h2>
-          <p>
+          <p data-aos="fade-right" class="small">Sobre nosotros</p>
+          <h2 data-aos="fade-right" data-aos-delay="400">Queremos verte crecer</h2>
+          <p data-aos="fade-right" data-aos-delay="800">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ab
             eos omnis, nobis dignissimos perferendis et officia architecto,
             fugiat possimus eaque qui ullam excepturi suscipit aliquid optio,
@@ -82,17 +88,18 @@
             consequatur? Perferendis est placeat facere aspernatur!
           </p>
         </div>
-        <div class="about-img">
+        <div data-aos="fade-left" data-aos-delay="1400" class="about-img">
           <img src="Assets/Motociclista.png" alt="Motociclista" />
         </div>
       </div>
     </section>
 
     <section id="motos">
-      <div data-aos="fade-right" class="motos-wrapper"></div>
+      <div class="motos-wrapper"></div>
       <h2>Tenemos lo que necesitas</h2>
       <div class="motos-container container">
-        <div class="moto-type eco">
+
+        <div data-aos="fade-right" data-aos-delay="200" class="moto-type eco">
           <div class="img-container">
             <img src="Assets/Moto1.png" alt="error" />
             <div class="img-content">
@@ -103,7 +110,7 @@
           </div>
         </div>
 
-        <div class="moto-type gama-media">
+        <div data-aos="fade-right" data-aos-delay="400"class="moto-type gama-media">
           <div class="img-container">
             <img src="Assets/Moto2.png" alt="error" />
             <div class="img-content">
@@ -115,7 +122,7 @@
           </div>
         </div>
 
-        <div class="moto-type deportiva">
+        <div data-aos="fade-right" data-aos-delay="600" class="moto-type deportiva">
           <div class="img-container">
             <img src="Assets/Moto3.png" alt="error" />
             <div class="img-content">
@@ -129,7 +136,7 @@
       </div>
     </section>
     <section id="mapa">
-      <h2>¿Donde estamos?</h2>
+      <h2 data-aos="fade-down">¿Donde estamos?</h2>
       <div class="mapa-container">
           <div class="mapa-info-container"><ul class="mapa-info">
             <li><strong>Agencia</strong>: Paraná</li>
@@ -154,7 +161,7 @@
     </div>
     </section>
     <section id="contact">
-      <div class="contact-container container">
+      <div data-aos="zoom-out" class="contact-container container">
         <div class="contact-img">
           <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="" />
         </div>
@@ -233,7 +240,12 @@
         prevEl: ".swiper-button-prev",
       },
     });
-    AOS.init();
+    $(function() {
+          AOS.init({
+            duration: 1200,
+            disable: 'phone',
+          });
+     });
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </html>
