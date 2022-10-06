@@ -137,6 +137,14 @@ body {
   height: 100%;
 }
 
+.sidebar img{
+  transition: all 0.4s ease-in-out;
+}
+
+.sidebar img:hover{
+  transform: scale(1.1)
+}
+
 
 /* ............//// Showcase styling ////......... */
 
